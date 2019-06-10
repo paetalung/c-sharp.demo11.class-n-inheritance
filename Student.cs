@@ -19,10 +19,14 @@ namespace demo11.class_n_inheritance
         {
 
         }
-
         public void Say() // Method
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("\nHello");
+        }
+
+        public void Say(string name) // Method + overload
+        {
+            Console.WriteLine("\nHello "+name);
         }
     }
 }

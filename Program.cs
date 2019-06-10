@@ -28,6 +28,9 @@ namespace demo11.class_n_inheritance
             Console.WriteLine(s3.Name);
 
             s1.Say();
+            s1.Say("lovely cat");
+            
+
         }
     }
 }
