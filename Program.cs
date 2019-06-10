@@ -6,7 +6,11 @@ namespace demo11.class_n_inheritance
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // [class]
+            // Field & Access modifier (public/private)
+            // Constructors(overloading) (private constructor)
+            // Method(overloading)
+            // Properties
         }
     }
 }
