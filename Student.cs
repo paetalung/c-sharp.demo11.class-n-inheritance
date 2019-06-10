@@ -9,11 +9,15 @@ namespace demo11.class_n_inheritance
         public int Score;
         public string Name;
 
-        public Student() // Constructors(overloading)
+        public Student(int score, string name) // Constructors
         {
             // use constructor to initial value
-            Score = 1;
-            Name = "Unknow";
+            Score = score;
+            Name = name;
+        }
+        public Student() // Constructors(overloading)
+        {
+
         }
     }
 }
