@@ -11,6 +11,9 @@ namespace demo11.class_n_inheritance
             // Constructors(overloading) (private constructor)
             // Method(overloading)
             // Properties
+
+            Student s1 = new Student();
+            s1. 
         }
     }
 }
