@@ -8,25 +8,17 @@ namespace demo11.class_n_inheritance
     {
         public int Score;
         public string Name;
+    }
 
-        public Student(int score, string name) // Constructors
+    public class GradeCal
+    {
+        public string CalGrade(Student s)
         {
-            // use constructor to initial value
-            Score = score;
-            Name = name;
-        }
-        public Student() // Constructors(overloading)
-        {
-
-        }
-        public void Say() // Method
-        {
-            Console.WriteLine("\nHello");
-        }
-
-        public void Say(string name) // Method + overload
-        {
-            Console.WriteLine("\nHello "+name);
+            if (s.Score > 90) return "A";
+            else if(s.Score > 80) return "B";
+            else if (s.Score > 70) return "C";
+            else if (s.Score > 60) return "D";
+            else return "F";
         }
     }
 }

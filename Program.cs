@@ -12,25 +12,21 @@ namespace demo11.class_n_inheritance
             // Method(overloading)
             // Properties
 
-            Student s1 = new Student(5,"Plypun");
-            Console.WriteLine(s1.Score);
-            Console.WriteLine(s1.Name);
+            Student s1 = new Student();
+            s1.Name = "Pae";
+            s1.Score = 95;
 
-            Student s2 = new Student(96,"Paetalung");
-            Console.WriteLine(s2.Score);
-            Console.WriteLine(s2.Name);
+            GradeCal cal = new GradeCal();
+            string grade = cal.CalGrade(s1);
+            Console.WriteLine(s1.Name + " got " + grade);
 
-            // create obj by Constructors(overloading)
-            Student s3 = new Student();
-            s3.Score = 50;
-            s3.Name = "oho";
-            Console.WriteLine(s3.Score);
-            Console.WriteLine(s3.Name);
-
-            s1.Say();
-            s1.Say("lovely cat");
-            
-
+            var s2 = new Student() // another way to set value
+            {
+                Name = "Dan",
+                Score = 95
+            };
+            var grade2 = cal.CalGrade(s2);
+            Console.WriteLine(s2.Name + " got " + grade2);
         }
     }
 }
