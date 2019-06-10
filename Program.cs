@@ -26,6 +26,8 @@ namespace demo11.class_n_inheritance
             s3.Name = "oho";
             Console.WriteLine(s3.Score);
             Console.WriteLine(s3.Name);
+
+            s1.Say();
         }
     }
 }

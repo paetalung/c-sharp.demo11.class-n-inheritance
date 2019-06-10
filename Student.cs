@@ -19,5 +19,10 @@ namespace demo11.class_n_inheritance
         {
 
         }
+
+        public void Say() // Method
+        {
+            Console.WriteLine("Hello");
+        }
     }
 }
