@@ -12,21 +12,31 @@ namespace demo11.class_n_inheritance
             // Method(overloading)
             // Properties
 
-            Student s1 = new Student();
-            s1.Name = "Pae";
-            s1.Score = 95;
-
-            GradeCal cal = new GradeCal();
-            string grade = cal.CalGrade(s1);
-            Console.WriteLine(s1.Name + " got " + grade);
-
-            var s2 = new Student() // another way to set value
+            Student s1 = new Student()
             {
-                Name = "Dan",
+                Name = "Pae",
                 Score = 95
             };
-            var grade2 = cal.CalGrade(s2);
-            Console.WriteLine(s2.Name + " got " + grade2);
+            
+            var s2 = new Student() // Var is another way
+            {
+                Name = "Dan",
+                Score = 65
+            };
+
+            var stu = new Student[2]; // array of method
+            stu[0] = s1;
+            stu[1] = s2;
+
+            GradeCal cal = new GradeCal();
+            for (int j = 0; j < stu.Length; j++)
+            {
+                var grade = cal.CalGrade(stu[j]);
+                Console.WriteLine(grade);
+            }
+
+            
+           
         }
     }
 }
