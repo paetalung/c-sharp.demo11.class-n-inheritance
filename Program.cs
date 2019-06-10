@@ -13,7 +13,7 @@ namespace demo11.class_n_inheritance
             // Properties
 
             Student s1 = new Student();
-            s1. 
+            
         }
     }
 }
