@@ -24,9 +24,10 @@ namespace demo11.class_n_inheritance
                 Score = 65
             };
 
-            var stu = new Student[2]; // array of method
-            stu[0] = s1;
-            stu[1] = s2;
+            var stu = new Student[2] // array of method
+            {
+                s1, s2
+            };
 
             GradeCal cal = new GradeCal();
             for (int j = 0; j < stu.Length; j++)
