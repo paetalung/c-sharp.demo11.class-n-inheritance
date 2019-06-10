@@ -6,6 +6,7 @@ namespace demo11.class_n_inheritance
 {
     public class Student
     {
-
+        public int Score;
+        string Name;
     }
 }

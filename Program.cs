@@ -13,7 +13,8 @@ namespace demo11.class_n_inheritance
             // Properties
 
             Student s1 = new Student();
-            
+            s1.Score = 5;
+            Console.WriteLine(s1.Score);
         }
     }
 }
